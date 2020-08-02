@@ -5,9 +5,26 @@
 </head>
 
 <script>
-    document.write(" Thiago nasceu em  " + (2020 - 33) + "<br>");
-    document.write(" Bell nasceu em  " + (2020 - 46) + "<br>");
-    document.write(" Gabriella nasceu em  " + (2020 - 13) + "<br>");
+    var ano = 2020;
+
+    document.write(" Thiago tem " + (ano - 1987) +
+        " anos" + "<br>");
+    document.write(" Bell tem  " + (ano - 1974) +
+        " anos" + "<br>");
+    document.write(" Gabriella tem  " + (ano - 2007) +
+        " anos" + "<br>");
+
+    var idadeThiago = 33;
+    var idadeBell = 46;
+    var idadeGabriella = 13;
+
+    var media = (idadeThiago + idadeBell + idadeGabriella) / 3;
+
+    document.write("A média das idades é " + Math.round(media) + "<br>");
+
+    var nome = "Thiago";
+
+    document.write("A idade de " + nome + " é " + idadeThiago);
 </script>
 
 

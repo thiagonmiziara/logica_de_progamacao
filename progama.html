@@ -5,26 +5,28 @@
 </head>
 
 <script>
+    function pulaLinha() {
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
     var ano = 2020;
 
-    document.write(" Thiago tem " + (ano - 1987) +
-        " anos" + "<br>");
-    document.write(" Bell tem  " + (ano - 1974) +
-        " anos" + "<br>");
-    document.write(" Gabriella tem  " + (ano - 2007) +
-        " anos" + "<br>");
+    //document.write(" Thiago tem " + (ano - 1987) +" anos");
+    mostra(" Thiago tem " + (ano - 1987) + " anos");
 
-    var idadeThiago = 33;
-    var idadeBell = 46;
-    var idadeGabriella = 13;
+    //document.write(" Bell tem  " + (ano - 1974) +" anos");
+    mostra("Bell tem  " + (ano - 1974) + " anos");
 
-    var media = (idadeThiago + idadeBell + idadeGabriella) / 3;
+    ano = 2021;
 
-    document.write("A média das idades é " + Math.round(media) + "<br>");
-
-    var nome = "Thiago";
-
-    document.write("A idade de " + nome + " é " + idadeThiago);
+    //document.write(" Gabriella tem  " + (ano - 2007) +" anos");
+    mostra(" Gabriella tem  " + (ano - 2007) + " anos");
 </script>
 
 

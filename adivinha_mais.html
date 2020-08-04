@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <input>
+    <button>
+    Adivinha qual número pensei!
+</button>
+</body>
+<script>
+    var numero = 5;
+    var input = document.querySelector("input");
+
+    function verifica() {
+        if (input.value == numero) {
+            alert("Você Acertou!");
+        } else {
+            alert("você errou!");
+        }
+    }
+
+    var button = document.querySelector("button");
+
+    button.onclick = verifica;
+</script>

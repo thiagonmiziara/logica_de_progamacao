@@ -87,7 +87,7 @@
 
     mostra(resultado);
 
-    function pulaLinha() {
+    /*function pulaLinha() {
         document.write("<br>");
     }
 
@@ -101,5 +101,19 @@
 
     var total = convidados + vips;
 
-    mostra("O total de convidados é " + total);
+    mostra("O total de convidados é " + total);*/
+
+
+    var quantidadeCarbono1 = parseInt(prompt("Quantidade de carbono substância 1"));
+    var quantidadeCarbono2 = parseInt(prompt("Quantidade de carbono substância 2"));
+
+    quantidadeCarbono2 = quantidadeCarbono2 + 2;
+
+    if (quantidadeCarbono1 == quantidadeCarbono2) {
+
+        mostra("Acho que são substâncias parecidas");
+    } else {
+
+        mostra("São substâncias bem diferentes");
+    }
 </script>

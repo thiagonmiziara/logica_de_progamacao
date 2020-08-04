@@ -11,18 +11,50 @@
 </button>
 </body>
 <script>
-    var numero = 5;
+    var numero = Math.round(Math.random() * 10);
     var input = document.querySelector("input");
+    input.focus();
 
     function verifica() {
         if (input.value == numero) {
-            alert("Você Acertou!");
+            alert("Parabéns!!!! Você Acertou!");
         } else {
             alert("você errou!");
         }
+        input.value = "";
+        input.focus();
     }
 
     var button = document.querySelector("button");
 
     button.onclick = verifica;
 </script>
+
+<style>
+    body {
+        background-color: black;
+    }
+    
+    input {
+        background-color: #cccccc;
+        text-align: center;
+        width: 30%;
+        padding: 20px 20px;
+        margin-left: 150px;
+        border-radius: 20px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+    button {
+        background-color: powderblue;
+        padding: 20px 20px;
+        margin-top: 300px;
+        margin-left: 50px;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 50%;
+        border: none;
+        width: 30%;
+    }
+</style>
